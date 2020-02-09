@@ -1,0 +1,63 @@
+    "react/prop-types": "warn",
+{
+  "extends": ["airbnb", "prettier", "prettier/react", "plugin:prettier/recommended", "eslint-config-prettier"],
+  "parser": "babel-eslint",
+  "rules": {
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "camelcase": "off",
+    "class-methods-use-this": "off",
+    "no-use-before-define": "off",
+    "no-plusplus": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": ["error", { "args": "none" }],
+    "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
+    "consistent-return": "off",
+    "jsx-a11y/accessible-emoji": "warn",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/no-did-update-set-state": "warn",
+    "react/prop-types": "warn",
+    "react/destructuring-assignment": "off",
+    "react/prefer-stateless-function": "off",
+    "react/no-unescaped-entities": ["error", { "forbid": [">", "}"] }],
+    "react/static-property-placement": ["error", "property assignment"],
+    "react/forbid-prop-types": [
+      "warn",
+      {
+        "forbid": ["any"],
+        "checkContextTypes": true,
+        "checkChildContextTypes": true
+      }
+    ],
+    "react/sort-comp": [
+      "warn",
+      {
+        "order": ["static-methods", "lifecycle", "everything-else", "rendering"],
+        "groups": {
+          "rendering": ["/^render.+$/", "render"]
+        }
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 120,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "arrowParens": "avoid"
+      }
+    ]
+  },
+  "plugins": ["prettier"]
+}
